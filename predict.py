@@ -58,10 +58,10 @@ for column in columns.outlier_columns:
 # Scaling 
 scaler = MinMaxScaler()
 
-scaler.fit(ds[columns.outlier_columns])
+scaler.fit(ds[columns.scaling_columns])
 
-train_scaled = scaler.transform(ds[columns.outlier_columns])
-ds[columns.outlier_columns] = train_scaled
+train_scaled = scaler.transform(ds[columns.scaling_columns])
+ds[columns.scaling_columns] = train_scaled
 
 # Define target and features columns
 X = ds[columns.X_columns]
