@@ -17,7 +17,7 @@ import model_best_hyperparameters
 import columns
 
 # reading data
-ds = pd.read_csv("phone_sales.csv")
+ds = pd.read_csv("test_data.csv")
 
 # clearing data
 def impute_na(df, variable, value):
